@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="../Negocio/logicaCalculadora.js"></script>
+    <title>Calculadora Jefferson Montero</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-sm-2 col-md-4">
+            <div class="panel panel-panel-body">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">CALCULADORA JS</h4>
+                    </div>
+                </div>
+                <table>
+                    <tr>
+                        <td colspan="4"><button class="btn btn-outline-primary" id="btnResult">0</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-success" onclick="add('1')">1</button></td>
+                        <td><button class="btn btn-success" onclick="add('2')">2</button></td>
+                        <td><button class="btn btn-success" onclick="add('3')">3</button></td>
+                        <td><button class="btn btn-primary" onclick="add('+')">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-success" onclick="add('4')">4</button></td>
+                        <td><button class="btn btn-success" onclick="add('5')">5</button></td>
+                        <td><button class="btn btn-success" onclick="add('6')">6</button></td>
+                        <td><button class="btn btn-primary" onclick="add('-')">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="btn btn-success" onclick="add('7')">7</button></td>
+                        <td><button class="btn btn-success" onclick="add('8')">8</button></td>
+                        <td><button class="btn btn-success" onclick="add('9')">9</button></td>
+                        <td><button class="btn btn-primary" onclick="add('*')">*</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><button class="btn btn-success" onclick="add('0')">0</button></td>
+                        <td colspan="3"><button class="btn btn-primary" onclick="add('/')">/</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button class="btn btn-danger" onclick="borrar()" class="ac">Borrar</button>
+                        </td>
+                        <td><button class="btn btn-info" onclick="add('.')">.</button></td>
+                        <td><button class="btn btn-warning" onclick="calcular()">=</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
